@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahzod's Tesla Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+    }
+    header h1 {
+      color: #E82127;
+      font-size: 36px;
+    }
+    .gallery, .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 30px;
+    }
+    .item {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #E82127;
+      transition: transform 0.3s ease;
+    }
+    .item:hover {
+      transform: scale(1.03);
+    }
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .item h3 {
+      text-align: center;
+      margin: 10px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Shahzod's Tesla Gallery 🚗</h1>
+</header>
+
+<section class="gallery">
+  <div class="item">
+    <img src="images/model-s.jpg" alt="Model S">
+    <h3>Model S</h3>
+  </div>
+  <div class="item">
+    <img src="images/model-3.jpg" alt="Model 3">
+    <h3>Model 3</h3>
+  </div>
+  <div class="item">
+    <img src="images/model-x.jpg" alt="Model X">
+    <h3>Model X</h3>
+  </div>
+  <div class="item">
+    <img src="images/model-y.jpg" alt="Model Y">
+    <h3>Model Y</h3>
+  </div>
+  <div class="item">
+    <img src="images/cybertruck.jpg" alt="Cybertruck">
+    <h3>Cybertruck</h3>
+  </div>
+</section>
+
+<section class="videos">
+  <div class="item">
+    <iframe src="https://www.youtube.com/embed/4YJJu46UbhY" allowfullscreen></iframe>
+    <h3>Model S Review</h3>
+  </div>
+  <div class="item">
+    <iframe src="https://www.youtube.com/embed/w4UHuTq1S10" allowfullscreen></iframe>
+    <h3>Model 3 Review</h3>
+  </div>
+  <div class="item">
+    <iframe src="https://www.youtube.com/embed/rkPjsZPOH1o" allowfullscreen></iframe>
+    <h3>Model X Review</h3>
+  </div>
+  <div class="item">
+    <iframe src="https://www.youtube.com/embed/0BXaV9gQW-U" allowfullscreen></iframe>
+    <h3>Model Y Review</h3>
+  </div>
+  <div class="item">
+    <iframe src="https://www.youtube.com/embed/Zk6gL8yUQ9w" allowfullscreen></iframe>
+    <h3>Cybertruck Review</h3>
+  </div>
+</section>
+
+<footer>
+  © 2025 Created by Shahzod. All rights reserved.
+</footer>
+
+</body>
+</html>
